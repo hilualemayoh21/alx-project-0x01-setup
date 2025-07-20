@@ -56,6 +56,7 @@ export interface UserModalProps {
   isOpen: boolean;
   onClose: () => void;
   onAddUser: (newUser: UserProps) => void;
+  onSubmit: (post: UserProps) => void;
 }
 
 // ✅ Post creation/editing

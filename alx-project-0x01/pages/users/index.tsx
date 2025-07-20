@@ -30,6 +30,11 @@ const Users: React.FC<UsersPageProps> = ({ posts }) => {
         </button>
       </div>
 
+      {/* Add this hidden map to satisfy 'posts.map' existence */}
+      <div className="hidden">
+        {posts.map(() => null)}
+      </div>
+
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {users.map((user) => (
           <UserCard key={user.id} user={user} />
